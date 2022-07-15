@@ -1,0 +1,22 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 71px;
+    @media (max-width: 375px) {
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 27px;
+        width: 343px;
+    }
+
+    .navbar-logo {
+        max-width: 200px;
+        @media (max-width: 375px) {
+            width: 96px;
+        }
+       
+    }
+}
