@@ -1,99 +1,104 @@
 .top-container {
-    background: #EDFBFF;
-    width: 100vw;
+  background: #edfbff;
+  width: 100vw;
+  height: 721px;
+  background-image: url("../../assets/bg-hero-desktop.svg");
+  padding: 68px 80px 80px 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width: 375px) {
+    padding: 0 16px 37px 16px;
+    background-image: url("../../assets/bg-hero-mobile.svg");
     height: 721px;
-    background-image: url('../../assets/bg-hero-desktop.svg');
-    padding: 68px 80px 80px 72px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 0;
+  }
+
+  .top-feature-container {
+    height: 482px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
 
     @media (max-width: 375px) {
-        padding: 0 16px 37px 16px;
-        background-image: url('../../assets/bg-hero-mobile.svg');
-        height: 721px;
-        justify-content: center;
-        gap: 0;
+      // flex-direction: column;
+      margin-top: 80px;
+      gap: 24px;
+      display: grid;
+      grid-template-columns: 1, 1fr;
+      align-items: center;
+      justify-content: center;
     }
 
-    .top-feature-container {
-        height: 482px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .top-feature-container-left {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 32px;
+
+      @media (max-width: 375px) {
+        // justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
         align-items: center;
-        gap: 54px;
+      }
+
+      .top-feature-header {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        color: #00252e;
+        max-width: 536px;
 
         @media (max-width: 375px) {
-            // flex-direction: column;
-            margin-top: 80px;
-            gap: 24px;
-            display: grid;
-            grid-template-columns: 1, 1fr;
-            align-items: center;
-            justify-content: center;
+          font-size: 24px;
+          line-height: 36px;
+          text-align: center;
         }
+      }
 
-        .top-feature-container-left {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            gap: 32px;
+      .top-feature-description {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #00252e;
+        max-width: 520px;
 
-            @media (max-width: 375px) {
-                // justify-content: center;
-                padding-left: 16px;
-                padding-right: 16px;
-                align-items: center;
-            }
-
-            .top-feature-header {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 40px;
-                line-height: 60px;
-                color: #00252E;
-                max-width: 536px;
-
-                @media (max-width: 375px) {
-                    font-size: 24px;
-                    line-height: 36px;
-                    text-align: center;
-                }
-            }
-
-            .top-feature-description {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 27px;
-                color: #00252E;
-                max-width: 520px;
-
-                @media (max-width: 375px) {
-                    font-size: 16px;
-                    line-height: 24px;
-                    text-align: center;
-                    color: #00252E;
-                }
-            }
+        @media (max-width: 375px) {
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #00252e;
         }
-
-        .top-feature-container-right {
-
-            .top-feature-image {
-                height: 482px;
-
-                @media (max-width: 375px) {
-                    height: 208px;
-                    width: 296px;
-                    align-self: center;
-                }
-            }
-        }
+      }
     }
+
+    .top-feature-container-right {
+      @media (max-width: 375px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .top-feature-image {
+        height: 482px;
+
+        @media (max-width: 375px) {
+          height: 208px;
+          width: 296px;
+          align-self: center;
+        }
+      }
+    }
+  }
 }
