@@ -1,0 +1,38 @@
+.box-container {
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+  border-radius: 15px;
+  width: 800px;
+  height: 280px;
+  position: absolute;
+  bottom: 322px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: 375px) {
+    width: 352px;
+    height: 176px;
+    bottom: 718px;
+    padding: 41px 12px;
+  }
+  .box-header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 60px;
+    color: #00252e;
+    @media (max-width: 375px) {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}
