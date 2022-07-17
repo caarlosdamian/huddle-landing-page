@@ -8,4 +8,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 140px;
+  @media (max-width: 375px) {
+    padding: 50px 20px;
+  }
 }

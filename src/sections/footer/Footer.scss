@@ -1,0 +1,94 @@
+.footer-container {
+  padding: 144px 120px 64px;
+  height: 418px;
+  background: #00252e;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  .footer-top {
+    .footer-top-img {
+      width: 152px;
+      height: 24px;
+    }
+  }
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 25px;
+    gap: 130px;
+    .lis-item-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 18px;
+      .list-item-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        .list-item-text {
+          width: 339px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+    .list-undeline-items {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 90px;
+      .list-item-text-undeline {
+        cursor: pointer;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        color: #ffffff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .icon-footer-container {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      .icon-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+        .icon-img {
+          cursor: pointer;
+
+          &:hover {
+            fill: red;
+          }
+        }
+      }
+      .copyright-footer {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+        width: 300px;
+      }
+    }
+  }
+}
